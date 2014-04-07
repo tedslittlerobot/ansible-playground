@@ -63,6 +63,8 @@
 
     - name: MySQL
       apt: pkg=mysql-server
+    - mysql_db: name=db-name
+    # - mysql_user: name=db-uname password=wefwef
 
 # Memcache
 
