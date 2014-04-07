@@ -59,6 +59,11 @@
     - apache2_module: state=present name=rewrite
     - apache2_module: state=present name=ssl
 
+# NGINX
+
+    # - apt_repository: repo='ppa:nginx/$nginx' state=present
+    # - apt: pkg=nginx update_cache=yes
+
 # MySQL
 
     - name: MySQL
