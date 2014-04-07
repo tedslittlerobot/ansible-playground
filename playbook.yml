@@ -46,7 +46,7 @@
     - name: Add HHVM Repo Key
       apt_key: url=http://dl.hhvm.com/conf/hhvm.gpg.key state=present
     - name: Add HHVM Repo Source
-      shell: echo deb http://dl.hhvm.com/ubuntu precise main | sudo tee /etc/apt/sources.list.d/hhvm.list
+      shell: echo deb http://dl.hhvm.com/ubuntu precise main | sudo tee /etc/apt/sources.list.d/hhvm.list creates=/etc/apt/sources.list.d/hhvm.list
     - name: Install HHVM
       apt: pkg=hhvm update_cache=yes
 
